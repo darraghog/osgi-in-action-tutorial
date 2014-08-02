@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint
+	xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.0.0"
+	xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0">
+	
+	<bean
+		id="inventory"
+		class="fancyfoods.persistence.InventoryImpl">
+		<tx:transaction
+			method="*"
+			value="Required" />
+		<jpa:context
+			property="entityManager"
+			unitname="fancyfoods" />
+		</bean>
+	<bean
+		id="populator"
+		class="fancyfoods.persistence.InventoryPopulator"
+		init-method="populate"
+		activation="eager" >
+			<property
+				name="inventory"
+				ref="inventory" />
+		</bean>
+	<service
+		ref="inventory"
+		interface="fancyfoods.api.Inventory" />
+</blueprint>
+

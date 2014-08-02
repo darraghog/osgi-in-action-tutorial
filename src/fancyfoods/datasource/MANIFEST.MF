@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Blueprint: OSGI-INF/blueprint/*.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: Fancy Foods Datasource
+Bundle-SymbolicName: fancyfoods.datasource
+Bundle-Version: 1.0.0
+Import-Package: javax.sql,org.apache.derby.jdbc
+
+
+

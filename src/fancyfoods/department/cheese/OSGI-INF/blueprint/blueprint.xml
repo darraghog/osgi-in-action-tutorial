@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint
+	xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	
+	<service interface="fancyfoods.api.SpecialOffer">
+		<bean
+			class="fancyfoods.department.cheese.DesperateCheeseOffer">
+			<property name="inventory" ref="inventory" />
+			</bean>
+	</service>
+	<reference id="inventory" interface="fancyfoods.api.Inventory" />
+</blueprint>
+
