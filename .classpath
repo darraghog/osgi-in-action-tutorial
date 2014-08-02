@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/Users/darraghog/localdev/aries/samples-1.0.0/blog/blog-assembly/target/geronimo-servlet_2.5_spec-1.2.jar"/>
-	<classpathentry kind="lib" path="/Users/darraghog/localdev/aries/samples-1.0.0/blog/blog-assembly/target/geronimo-jpa_2.0_spec-1.1.jar"/>
-	<classpathentry kind="output" path="classes"/>
-</classpath>
