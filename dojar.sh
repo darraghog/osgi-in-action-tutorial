@@ -1,5 +1,7 @@
 #!/bin/sh
-export LOCAL=$HOME/localdev/fancyfoods.dog
+#export LOCAL=$HOME/localdev/fancyfoods.dog
+export LOCAL=`pwd`
+if ! test -d $LOCAL/lib; then mkdir $LOCAL/lib; fi
 pushd lib
 echo "***** Web"
 pushd $LOCAL/classes
