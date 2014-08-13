@@ -9,7 +9,7 @@ if ! test -d $LOCAL/bin; then
 fi
 if ! test -d $LIBDIR; then mkdir $LIBDIR; fi
 echo "***** Web"
-pushd $LIBDIR
+pushd $CLASSDIR
 jar cmfv $LOCAL/src/fancyfoods/web/MANIFEST.MF $LIBDIR/fancyfoods.web_1.0.0.jar fancyfoods/web  -C $LOCAL/src/fancyfoods/web WEB-INF
 popd
 echo "****** Web NLS"
