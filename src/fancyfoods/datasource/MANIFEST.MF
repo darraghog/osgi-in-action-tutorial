@@ -8,3 +8,4 @@ Import-Package: javax.sql,org.apache.derby.jdbc
 
 
 
+Bundle-Description: Defines the Blueprint datasource that will be used to store and retrieve data entities. Implements JPA services.

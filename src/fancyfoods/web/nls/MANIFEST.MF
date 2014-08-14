@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: French language resources
+Bundle-Name: French language resource files
 Bundle-SymbolicName: fancyfoods.web.nls.fr
+Fragment-Host: fancyfoods.web;bundle-version="[1.0.0,2.0.0)"
 Bundle-Version: 1.0.0
-Fragment-Host: fancyfoods.web;bundle-version="[1.0.0,2.0.0)";
