@@ -13,11 +13,13 @@ public class InventoryImpl implements Inventory {
 	private EntityManager em;
 	
 	public void setEntityManager(EntityManager em) {
+		//System.out.println("**** Setting entity manager");
 		this.em = em;
 	}
 	
 	@Override
 	public Food getFood(String name) {
+		//System.out.println("**** Accessing entity manager");
 		return em.find(FoodImpl.class, name);
 	}
 
@@ -46,9 +48,10 @@ public class InventoryImpl implements Inventory {
 
 	@Override
 	public int getFoodCount() {
+		//System.out.println("**** Executing count query");
 		Query query = em.createQuery("SELECT COUNT(f) FROM FOOD f");
 		Number count = (Number) query.getSingleResult();
-		System.out.println("**** COUNT = "+count.toString());
+		//System.out.println("**** COUNT = "+count.toString());
 		return count.intValue();
 	}
 
