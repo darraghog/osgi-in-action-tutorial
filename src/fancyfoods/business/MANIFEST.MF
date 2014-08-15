@@ -1,8 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Fancy Foods Business Logic
+Bundle-Name: fancyfoods.api
 Bundle-Blueprint: OSGI-INF/blueprint/*.xml
 Bundle-SymbolicName: fancyfoods.business
 Bundle-Version: 1.0.0
 Import-Package: fancyfoods.api;version="[1.0,2.0)"
 
+Bundle-Description: API for Fancy Foods

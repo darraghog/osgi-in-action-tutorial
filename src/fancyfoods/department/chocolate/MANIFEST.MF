@@ -3,6 +3,6 @@ Bundle-Blueprint: OSGI-INF/blueprint/*.xml
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: fancyfoods.department.chocolate
 Bundle-Version: 1.0.0
-Import-Package: fancyfoods.api;version="[1.0,2.0)"
+Import-Package: fancyfoods.api;version="[1.0.0,2.0.0)"
 
 
