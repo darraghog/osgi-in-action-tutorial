@@ -13,8 +13,8 @@ pushd $CLASSDIR
 jar cmfv $LOCAL/src/fancyfoods/web/MANIFEST.MF $LIBDIR/fancyfoods.web_1.0.0.jar fancyfoods/web  -C $LOCAL/src/fancyfoods/web WEB-INF
 popd
 echo "****** Web NLS"
-pushd $LOCAL/src/fancyfoods/web/nls
-jar cmfv $LOCAL/src/fancyfoods/web/nls/MANIFEST.MF $LIBDIR/fancyfoods.web.nls.fr_1.0.0.jar messages_en_US.properties messages_fr.properties
+pushd $CLASSDIR
+jar cmfv $LOCAL/src/fancyfoods/web/nls/MANIFEST.MF $LIBDIR/fancyfoods.web.nls.fr_1.0.0.jar -C $LOCAL/src fancyfoods/web/messages_fr.properties -C $LOCAL/src fancyfoods/web/messages_en_US.properties
 popd
 echo "****** API"
 pushd $CLASSDIR
@@ -38,6 +38,6 @@ jar cmfv $LOCAL/src/fancyfoods/datasource/MANIFEST.MF $LIBDIR/fancyfoods.datasou
 popd
 echo "******* Persistence"
 pushd $CLASSDIR
-jar cmfv $LOCAL/src/fancyfoods/persistence/MANIFEST.MF $LIBDIR/fancyfoods.persistence_1.0.0.jar  fancyfoods/persistence -C $LOCAL/src/fancyfoods/persistence OSGI-INF  -C $LOCAL/src/fancyfoods/persistence persistence.xml
+jar cmfv $LOCAL/src/fancyfoods/persistence/MANIFEST.MF $LIBDIR/fancyfoods.persistence_1.0.0.jar  fancyfoods/persistence -C $LOCAL/src/fancyfoods/persistence OSGI-INF  -C $LOCAL/src/fancyfoods/persistence  persistence.xml
 popd
 echo "******** Done"

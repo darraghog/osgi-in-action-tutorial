@@ -48,6 +48,7 @@ public class InventoryImpl implements Inventory {
 	public int getFoodCount() {
 		Query query = em.createQuery("SELECT COUNT(f) FROM FOOD f");
 		Number count = (Number) query.getSingleResult();
+		System.out.println("**** COUNT = "+count.toString());
 		return count.intValue();
 	}
 
