@@ -14,9 +14,7 @@
 		<class>fancyfoods.persistence.FoodImpl</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
-			<property
-				name="openjpa.jdbc.SynchronizeMappings"
-				value="buildSchema(ForeignKeys=true)" />
+		<property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
 		</properties>
 	</persistence-unit>	
 </persistence>

@@ -22,7 +22,9 @@ public class FoodImpl implements Food {
 	}
 	
 	public FoodImpl() {
-		// TODO Auto-generated constructor stub
+		this.name = null;
+		this.price = 0;
+		this.quantity=0;
 	}
 
 	@Override
